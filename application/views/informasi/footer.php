@@ -2,13 +2,25 @@
       <!-- End of Main Content -->
 
       <!-- Footer -->
-      <footer class="sticky-footer bg-dark" style="bgcolor:blue;">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
-          </div>
-        </div>
-      </footer>
+      <footer>
+  <div class="container">
+  <div class="row" >
+    <div class="col">
+      <img src="<?php echo base_url('assets/images/logo.png');?>" alt="universitas amikom" style="width: 40%; margin-top: 30px;">
+    </div>
+    <div class="col">
+    <p class="" style="margin-top: 30px; color: white;" >
+      <b>UNIVERSITAS AMIKOM YOGYAKARTA</b><br>
+      Kampus Terpadu : Jl. Ring Road Utara, Condong Catur <br>
+      Sleman Yogyakarta <br>
+      Telp: (0274)884201 - 207 <br>
+      Fax: (0274)884208 Kode Pos: 55283 <br>
+      E-mail: amikom@amikom.ac.id
+    </p>
+    </div>
+  </div>
+</div>
+</footer>
       <!-- End of Footer -->
 
     </div>
