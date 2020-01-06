@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost:8080/finalproject/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'localhost:8080/finalproject/informasi';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
