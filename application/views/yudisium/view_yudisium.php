@@ -25,7 +25,7 @@
 		?>
 			<tr>
 				<!-- <th scope="row"><?php echo $id_yudisium++; ?></th> -->
-				<td><?php echo $row->id_yudisium; ?></td>
+				<td><?php echo $no++; ?></td>
                 <td><?php echo $row->nim; ?></td>
                 <td><?php echo $row->nama; ?></td>
                 <td><?php echo $row->ipk; ?></td>

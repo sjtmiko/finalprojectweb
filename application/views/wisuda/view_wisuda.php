@@ -21,7 +21,7 @@
 		?>
 			<tr>
 				<!-- <th scope="row"><?php echo $id_wisuda++; ?></th> -->
-				<td><?php echo $row->id_wisuda; ?></td>
+				<td><?php echo $no++; ?></td>
                 <td><?php echo $row->nim; ?></td>
                 <td><?php echo $row->nama; ?></td>
                 <td><?php echo $row->jurusan; ?></td>

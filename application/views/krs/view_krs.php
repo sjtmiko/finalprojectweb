@@ -7,12 +7,13 @@
 		<thead>
 			<tr>
 				<th scope="col">No</th>
-                <th scope="col">Kode Matkul</th>
-                <th scope="col">Nama Matkul</th>
-                <th scope="col">Jumlah SKS</th>
-                <th scope="col">Konsentrasi</th>
+                <th scope="col">NIM</th>
+                <th scope="col">Nama Mahasiswa</th>
                 <th scope="col">Semester</th>
-
+                <th scope="col">Konsentrasi</th>
+                <th scope="col">Mata Kuliah Wajib</th>
+                <th scope="col">Mata Kuliah Konsentrasi</th>
+                <th scope="col">Aksi</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -22,15 +23,16 @@
 		?>
 			<tr>
 				<!-- <th scope="row"><?php echo $id_krs++; ?></th> -->
-				<td><?php echo $row->id_krs; ?></td>
-                <td><?php echo $row->kode_matkul; ?></td>
-                <td><?php echo $row->nama_matkul; ?></td>
-                <td><?php echo $row->jumlah_sks; ?></td>
-                <td><?php echo $row->konsentrasi; ?></td>
+				<td><?php echo $no++; ?></td>
+                <td><?php echo $row->nim; ?></td>
+                <td><?php echo $row->nama_mhs; ?></td>
                 <td><?php echo $row->semester; ?></td>
+                <td><?php echo $row->konsentrasi; ?></td>
+                <td><?php echo $row->matkul_wajib; ?></td>
+                <td><?php echo $row->matkul_konsentrasi; ?></td>
 				<td>
 					<a href="<?= base_url('krs/krs_edit/'.$row->id_krs) ?>">Edit</a> |
-					<a href="<?= base_url('krs/krs_delete/'.$row->id_krs) ?>">Hapus</a> 
+					<a href="<?= base_url('krs/krs_delete/'.$row->id_krs) ?>">Hapus</a>
 				</td>
 			</tr>
 			<?php } ?>

@@ -15,11 +15,13 @@ class M_krs extends CI_Model {
    {
        $data_krs = array(
                     'id_krs' => $this->input->post('id_krs'),
-                    'kode_matkul' => $this->input->post('kode_matkul'),
-                    'nama_matkul' => $this->input->post('nama_matkul'),
-                    'jumlah_sks' => $this->input->post('jumlah_sks'),
+                    'nim' => $this->input->post('nim'),
+                    'nama_mhs' => $this->input->post('nama_mhs'),
+                    'semester' => $this->input->post('semester'),
                     'konsentrasi' => $this->input->post('konsentrasi'),
-                    'semester' => $this->input->post('semester')
+                    'matkul_wajib' => $this->input->post('matkul_wajib'),
+                    'matkul_konsentrasi' => $this->input->post('matkul_konsentrasi'),
+
        );
        $this->db->insert('krs', $data_krs);
    }
@@ -34,11 +36,12 @@ class M_krs extends CI_Model {
         $id = $this->input->post('id_krs');
         $data_krs = array(
             'id_krs' => $this->input->post('id_krs'),
-            'kode_matkul' => $this->input->post('kode_matkul'),
-            'nama_matkul' => $this->input->post('nama_matkul'),
-            'jumlah_sks' => $this->input->post('jumlah_sks'),
-            'konsentrasi' => $this->input->post('konsentrasi'),
-            'semester' => $this->input->post('semester')
+                    'nim' => $this->input->post('nim'),
+                    'nama_mhs' => $this->input->post('nama_mhs'),
+                    'semester' => $this->input->post('semester'),
+                    'konsentrasi' => $this->input->post('konsentrasi'),
+                    'matkul_wajib' => $this->input->post('matkul_wajib'),
+                    'matkul_konsentrasi' => $this->input->post('matkul_konsentrasi')
         );
         $this->db->where('id_krs', $id);
         $this->db->update('krs', $data_krs);    

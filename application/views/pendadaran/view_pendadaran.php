@@ -23,7 +23,7 @@
 		?>
 			<tr>
 				<!-- <th scope="row"><?php echo $id_pendadaran++; ?></th> -->
-				<td><?php echo $row->id_pendadaran; ?></td>
+				<td><?php echo $no++; ?></td>
                 <td><?php echo $row->hari_tanggal; ?></td>
                 <td><?php echo $row->jam; ?></td>
                 <td><?php echo $row->ruang; ?></td>
